@@ -24,16 +24,16 @@ with st.sidebar:
 
     st.markdown("""
     **Features:**
-    ✔ RAG from physiotherapy guidelines  
-    ✔ Intent understanding  
-    ✔ Safety guardrails  
-    ✔ Rehab advice format  
-    ✔ Multi-turn memory  
+    1.RAG from physiotherapy guidelines  
+    2.Intent understanding  
+    3.Safety guardrails  
+    4.Rehab advice format  
+    5.Multi-turn memory  
 
-    ⚠️ This tool does NOT provide medical diagnosis.
+     This tool does NOT provide medical diagnosis.
     """)
 
-    if st.button("🧹 Clear Chat"):
+    if st.button(" Clear Chat"):
         st.session_state.messages = []
         st.rerun()
 
