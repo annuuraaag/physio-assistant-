@@ -86,31 +86,33 @@ The assistant enforces the following rules:
 
 ### 1. Clone the Repository
 
-```bash
 git clone https://github.com/annuraaaag/physio-assistant-.git
 cd physio-assistant-
-2. Create Virtual Environment
+
+### 2. Create Virtual Environment
 Windows (PowerShell)
 python -m venv venv
 venv\Scripts\activate
 macOS / Linux
 python3 -m venv venv
 source venv/bin/activate
-3. Install Dependencies
+
+### 3. Install Dependencies
 pip install -r requirement.txt
-4. Configure Environment Variables
+### 4. Configure Environment Variables
 
 Create a .env file in the project root:
 
 GROQ_API_KEY=your_api_key_here
-5. Add Knowledge Base Document
+### 5. Add Knowledge Base Document
 
 Place the physiotherapy PDF inside the docs/ folder.
 
 Example:
 
 docs/inputdata.pdf
-6. Build Vector Database
+
+### 6. Build Vector Database
 
 Run the ingestion script:
 
@@ -126,12 +128,13 @@ Generate embeddings
 
 Create FAISS index in faiss_index/
 
-7. Run the Application
+### 7. Run the Application
 Streamlit Interface
 streamlit run app.py
 FastAPI Backend (Optional)
 uvicorn api:app --reload
-Project Structure
+
+### Project Structure
 physio-assistant/
 │
 ├── app.py                 # Streamlit frontend
@@ -144,7 +147,8 @@ physio-assistant/
 ├── .env.example           # Environment variable template
 ├── test.py                # CLI testing script
 └── README.md
-Example Use Cases
+
+### Example Use Cases
 
 Exercise guidance for common injuries
 
@@ -156,7 +160,7 @@ Safety warnings for severe symptoms
 
 Educational physiotherapy support
 
-Limitations
+### Limitations
 
 Not a substitute for professional medical advice
 
@@ -166,7 +170,7 @@ Does not perform diagnosis
 
 Requires internet access for LLM API
 
-Future Improvements
+### Future Improvements
 
 Deployment on cloud infrastructure
 
@@ -180,11 +184,11 @@ Clinical validation workflows
 
 Authentication and user profiles
 
-Disclaimer
+### Disclaimer
 
 This assistant provides informational guidance only and is not intended to replace professional medical consultation.
 Users should consult a licensed physiotherapist or healthcare provider for diagnosis and treatment.
 
-License
+### License
 
 This project is for educational and demonstration purposes.
